@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Summary of feature groups and representative definitions. All features are aggregated at the participant level over the 12-month window.}
+\label{tab:features-summary}
+\begin{tabular}{p{0.20\linewidth}p{0.72\linewidth}}
+\toprule
+Group & Examples and definitions \\
+\midrule
+Textual & RoBERTa mean-pooled embeddings; TF-IDF word 1--2g, char 3--5g; LIWC/NRC categories per 1k tokens; VADER sentiment stats; negation counts; first-person pronoun rates \\
+Behavioral & Hour-of-day and day-of-week histograms; nighttime ratio; inter-message interval log-normal (mu, sigma); burstiness; weekly autocorrelation; login-time medians \\
+Interaction & Message length quantiles; fraction short messages (\(\leq 3\) tokens); media usage flags and rates; response latency med/IQR/tails \\
+Personality & BFI-2-XS domain T-scores (O, C, E, A, N) \\
+\bottomrule
+\end{tabular}
+\end{table}
+

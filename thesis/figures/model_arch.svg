@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <defs>
+    <style>
+      .box { fill:#f7fbff; stroke:#1f77b4; rx:8; ry:8; }
+      .box2 { fill:#fff7fb; stroke:#d62728; rx:8; ry:8; }
+      .t { font-family: Helvetica, Arial, sans-serif; font-size:13px; fill:#222; }
+      .h { font-size:14px; font-weight:bold; }
+      .arrow { stroke:#444; stroke-width:2; marker-end:url(#arrowhead); fill:none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#444" />
+    </marker>
+  </defs>
+  <text x="200" y="40" class="t h">RoBERTa per-message encoder + user aggregation</text>
+  <rect x="40" y="60" width="320" height="80" class="box"/>
+  <text x="200" y="100" text-anchor="middle" class="t">Message text (tokenized)</text>
+  <line x1="360" y1="100" x2="400" y2="100" class="arrow"/>
+  <rect x="400" y="60" width="220" height="80" class="box"/>
+  <text x="510" y="88" text-anchor="middle" class="t h">RoBERTa</text>
+  <text x="510" y="106" text-anchor="middle" class="t">embedding f_θ(m)</text>
+  <line x1="620" y1="100" x2="660" y2="100" class="arrow"/>
+  <rect x="660" y="60" width="260" height="80" class="box"/>
+  <text x="790" y="100" text-anchor="middle" class="t">Mean-pool over messages → e_p</text>
+  <line x1="790" y1="140" x2="790" y2="180" class="arrow"/>
+  <rect x="660" y="180" width="260" height="80" class="box"/>
+  <text x="790" y="220" text-anchor="middle" class="t">MLP head → ŷ</text>
+
+  <text x="200" y="300" class="t h">Late fusion: text + behavioral + BFI-2-XS</text>
+  <rect x="40" y="320" width="220" height="80" class="box2"/>
+  <text x="150" y="350" text-anchor="middle" class="t">Text embedding e_p</text>
+  <rect x="280" y="320" width="220" height="80" class="box2"/>
+  <text x="390" y="350" text-anchor="middle" class="t">Behavioral features</text>
+  <rect x="520" y="320" width="220" height="80" class="box2"/>
+  <text x="630" y="350" text-anchor="middle" class="t">BFI-2-XS T-scores</text>
+  <line x1="260" y1="360" x2="280" y2="360" class="arrow"/>
+  <line x1="500" y1="360" x2="520" y2="360" class="arrow"/>
+  <line x1="740" y1="360" x2="780" y2="360" class="arrow"/>
+  <rect x="780" y="320" width="160" height="80" class="box2"/>
+  <text x="860" y="350" text-anchor="middle" class="t">Classifier MLP</text>
+</svg>
