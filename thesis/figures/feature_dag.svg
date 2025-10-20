@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <defs>
+    <style>
+      .box { fill:#f5fff5; stroke:#2ca02c; rx:8; ry:8; }
+      .t { font-family: Helvetica, Arial, sans-serif; font-size:13px; fill:#222; }
+      .arrow { stroke:#444; stroke-width:2; marker-end:url(#arrowhead); fill:none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#444" />
+    </marker>
+  </defs>
+  <rect x="40" y="60" width="220" height="80" class="box"/>
+  <text x="150" y="100" text-anchor="middle" class="t">Redacted messages</text>
+  <line x1="260" y1="100" x2="300" y2="100" class="arrow"/>
+
+  <rect x="300" y="40" width="220" height="60" class="box"/>
+  <text x="410" y="75" text-anchor="middle" class="t">Tokenization + Lemmas</text>
+  <line x1="410" y1="100" x2="410" y2="130" class="arrow"/>
+  <rect x="300" y="130" width="220" height="60" class="box"/>
+  <text x="410" y="165" text-anchor="middle" class="t">TF-IDF n-grams</text>
+
+  <rect x="560" y="40" width="220" height="60" class="box"/>
+  <text x="670" y="75" text-anchor="middle" class="t">RoBERTa encoder</text>
+  <line x1="780" y1="70" x2="820" y2="70" class="arrow"/>
+  <rect x="820" y="40" width="120" height="60" class="box"/>
+  <text x="880" y="75" text-anchor="middle" class="t">Mean-pool</text>
+
+  <rect x="560" y="130" width="220" height="60" class="box"/>
+  <text x="670" y="165" text-anchor="middle" class="t">Lexicons (LIWC/NRC)</text>
+
+  <rect x="300" y="220" width="220" height="60" class="box"/>
+  <text x="410" y="255" text-anchor="middle" class="t">Behavioral features</text>
+
+  <rect x="560" y="220" width="220" height="60" class="box"/>
+  <text x="670" y="255" text-anchor="middle" class="t">Interaction features</text>
+
+  <line x1="410" y1="190" x2="410" y2="220" class="arrow"/>
+  <line x1="670" y1="190" x2="670" y2="220" class="arrow"/>
+
+  <rect x="300" y="320" width="480" height="80" class="box"/>
+  <text x="540" y="360" text-anchor="middle" class="t">User-level aggregation and standardization</text>
+</svg>

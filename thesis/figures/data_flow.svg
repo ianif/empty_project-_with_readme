@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360">
+  <defs>
+    <style>
+      .box { fill:#f5f5f5; stroke:#444; rx:8; ry:8; }
+      .arrow { stroke:#444; stroke-width:2; marker-end:url(#arrowhead); fill:none; }
+      .t { font-family: Helvetica, Arial, sans-serif; font-size:14px; fill:#222; }
+      .cap { font-size:12px; fill:#555; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#444" />
+    </marker>
+  </defs>
+  <rect x="20" y="60" width="150" height="80" class="box"/>
+  <text x="95" y="95" text-anchor="middle" class="t">Collection</text>
+
+  <rect x="200" y="60" width="180" height="80" class="box"/>
+  <text x="290" y="95" text-anchor="middle" class="t">De-identification</text>
+
+  <rect x="410" y="60" width="170" height="80" class="box"/>
+  <text x="495" y="88" text-anchor="middle" class="t">Encrypted</text>
+  <text x="495" y="106" text-anchor="middle" class="t">Storage</text>
+
+  <rect x="610" y="60" width="150" height="80" class="box"/>
+  <text x="685" y="95" text-anchor="middle" class="t">Preprocessing</text>
+
+  <rect x="790" y="60" width="150" height="80" class="box"/>
+  <text x="865" y="95" text-anchor="middle" class="t">Modeling</text>
+
+  <rect x="410" y="180" width="170" height="80" class="box"/>
+  <text x="495" y="215" text-anchor="middle" class="t">Evaluation</text>
+
+  <line x1="170" y1="100" x2="200" y2="100" class="arrow"/>
+  <line x1="380" y1="100" x2="410" y2="100" class="arrow"/>
+  <line x1="580" y1="100" x2="610" y2="100" class="arrow"/>
+  <line x1="760" y1="100" x2="790" y2="100" class="arrow"/>
+  <line x1="865" y1="140" x2="495" y2="180" class="arrow"/>
+
+  <text x="495" y="320" text-anchor="middle" class="cap">Data flow with audit checkpoints and privacy-preserving transformations</text>
+</svg>

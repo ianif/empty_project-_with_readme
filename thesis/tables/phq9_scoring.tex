@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{PHQ-9 items, response options, and scoring rules. Binary label positive if total score \(\geq 10\).}
+\label{tab:phq9-scoring}
+\begin{tabular}{p{0.06\linewidth}p{0.74\linewidth}p{0.16\linewidth}}
+\toprule
+Item & Prompt (past two weeks) & Scoring \\
+\midrule
+1 & Little interest or pleasure in doing things & 0--3 \\
+2 & Feeling down, depressed, or hopeless & 0--3 \\
+3 & Trouble falling or staying asleep, or sleeping too much & 0--3 \\
+4 & Feeling tired or having little energy & 0--3 \\
+5 & Poor appetite or overeating & 0--3 \\
+6 & Feeling bad about yourself — or that you are a failure or have let yourself or your family down & 0--3 \\
+7 & Trouble concentrating on things, such as reading the newspaper or watching television & 0--3 \\
+8 & Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual & 0--3 \\
+9 & Thoughts that you would be better off dead or of hurting yourself in some way & 0--3 \\
+\midrule
+Total & \(S_{\text{PHQ}} = \sum_{i=1}^{9} x_i\), range 0--27 & Positive if \(\geq 10\) \\
+Missing & If one item missing, impute with rounded mean; if \(\geq 2\) missing, invalid & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
